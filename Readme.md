@@ -18,7 +18,7 @@ demo-framework/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── base_page/          # Shared/base page functionality
-│   │   │   ├── contants/           # Project constants (folder name as currently used)
+│   │   │   ├── constants/           # Project constants (folder name as currently used)
 │   │   │   ├── org/example/        # Page classes, e.g. CheckBoxPage and TextBoxPage
 │   │   │   └── utils/              # Reusable utilities
 │   │   └── resources/              # Main resources
