@@ -1,0 +1,11 @@
+<suite name="Demo Framework" parallel="false" thread-count="1">
+    <test verbose="2" preserve-order="true" name="Check Box Page Test">
+        <classes>
+            <class name="org.example.CheckBoxPageTest">
+                <methods>
+                    <include name="verifyCheckBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

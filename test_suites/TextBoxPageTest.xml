@@ -1,0 +1,12 @@
+<suite name="Demo Framework" parallel="false" thread-count="1">
+    <test verbose="2" preserve-order="true" name="Text Box Page Test">
+        <classes>
+            <class name="org.example.TextBoxPageTest">
+                <methods>
+                    <include name="verifyTextBoxFormSubmission1"/>
+                    <include name="verifyTextBoxFormSubmission2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

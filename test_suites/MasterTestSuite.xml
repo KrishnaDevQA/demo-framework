@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Demo Framework Master Suite" parallel="false" thread-count="1">
+    <suite-files>
+        <suite-file path="TextBoxPageTest.xml"/>
+        <suite-file path="CheckBoxPageTest.xml"/>
+    </suite-files>
+</suite>

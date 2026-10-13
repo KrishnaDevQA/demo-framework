@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <!-- Directory for logs -->
+        <Property name="basePath">./logs</Property>
+        <!-- Timestamp pattern to make each log file unique -->
+        <Property name="logFilename">automation-${date:yyyy-MM-dd-HH-mm-ss}.log</Property>
+    </Properties>
+    <Appenders>
+        <!-- Rolling file appender -->
+        <RollingFile name="FileLogger"
+                     fileName="${basePath}/${logFilename}"
+                     filePattern="${basePath}/archive/automation-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5p %c{1}:%L - %m%n"/>
+            <Policies>
+                <!-- Roll over if file exceeds 10MB or daily -->
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>
